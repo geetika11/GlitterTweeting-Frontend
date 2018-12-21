@@ -11,6 +11,10 @@ import { HeaderComponent } from './header/header.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PlayGroundComponent } from './play-ground/play-ground.component';
+import { FollowersComponent } from './followers/followers.component';
+import { FollowingComponent } from './following/following.component';
+import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     SignupComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    PlayGroundComponent,
+    FollowersComponent,
+    FollowingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
