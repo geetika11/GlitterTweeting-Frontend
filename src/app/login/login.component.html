@@ -1,0 +1,47 @@
+
+
+<div class="padding">
+    <div class="container">
+        <div class="respond text-center">
+            <h1>Sign Up</h1>
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" class="comment-form">
+                <div class="row mt20" >
+                    <div class="col-md-4 col-md-offset-4">
+                        <ul>
+                            <li *ngFor="let errorMessage of errorList" class="errormessage">{{errorMessage}}</li>
+                        </ul>
+                    </div>
+
+                </div>
+           
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-4">
+                        <span class="comment-form-control-wrap email">
+                            <label for="Email">Email</label>
+                            <input (ngModel)="Email" type="email" name="Email" id="Email" class="comment-form-control"
+                                required>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-4">
+                        <span class="comment-form-control-wrap">
+                            <label for="Password">Password</label>
+                            <input (ngModel)="Password" type="password" name="Password" id="Password" class="comment-form-control"
+                                required>
+                        </span>
+                    </div>
+                </div>
+                        <div class="row mt20">
+                    <div class="col-md-12">
+                        <span class="comment-form-control-wrap submit" (mouseenter)="showValidationMessages = true"
+                            (mouseleave)="showValidationMessages = false">
+                            <input type="submit" name="submit" id="submit" class="comment-form-control" value="login"
+                                [disabled]="loginForm.invalid">
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.respond -->
+    </div>
+</div>
