@@ -9,8 +9,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   constructor(private route: Router, private router: ActivatedRoute) { }
-
+  userID = localStorage.getItem('ID');
+  userName=localStorage.getItem('Username');
   ngOnInit() {
+   
   }
 
+  
 }
